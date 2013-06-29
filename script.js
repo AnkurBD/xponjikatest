@@ -22,7 +22,7 @@ start.setMonth(3);
 var starttosec=start.getTime();
 var todaytosec=datetoday.getTime();
 var bnyr;
-bnyr=start.getFullYear()-594;
+bnyr=start.getFullYear()-593;
 //alert(bnyr);
 //get date difference from 14 april
 var elapseddate=(todaytosec-starttosec)/(3600*24*1000);
@@ -53,6 +53,5 @@ if(elapseddate>0){
 	months++;
 }
 //alert(months.toString()+" - "+bnyr.toString());
-var bndt=bnreplace(elapseddate.toString());
-alert(bndt +" "+ bnmonths[months-1]+ " "+bnreplace(bnyr.toString()));
+alert(bnreplace(elapseddate.toString()) +" "+ bnmonths[months-1]+ " "+bnreplace(bnyr.toString()));
 
